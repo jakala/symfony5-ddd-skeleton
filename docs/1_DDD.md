@@ -1,3 +1,25 @@
+# DDD
+## estructura de carpetas:
+```
+src
+├── Application
+│   ├── Command
+│   ├── Handler
+│   ├── Response
+│   └── Service
+├── Domain
+│   ├── Entity
+│   ├── Event
+│   ├── Exception
+│   ├── Interface
+│   └── ValueObject
+├── Infrastructure
+│   ├── Controller
+│   ├── Exception
+│   ├── Repository
+│   └── Service
+└── Shared
+```
 ## Domain
 Tenemos dentro de esta carpeta todo lo referente a la parte de Dominio de nuestro negocio
 
