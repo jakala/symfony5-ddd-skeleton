@@ -1,3 +1,3 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+health-check:
+    path: /check
+    controller: App\Infrastructure\Controller\HealthCheckController
