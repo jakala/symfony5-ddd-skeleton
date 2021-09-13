@@ -17,3 +17,18 @@ install_composer: CMD=--ignore-platform-reqs
 .PHONY: vendors
 vendors install_composer:
 	composer install $(CMD)
+
+# ejecutar test de phpunit
+.PHONY: run-tests
+run-tests:
+	@docker exec api vendor/bin/phpunit
+
+# analizar formato php PSR12
+.PHONY: check-style
+check-style:
+	@docker exec api vendor/bin/phpcs --standard=PSR12 src tests --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1
+
+# corregir PSR12
+.PHONY: fix-style
+fix-style:
+	@docker exec api vendor/bin/phpcbf --standard=PSR12 src tests
