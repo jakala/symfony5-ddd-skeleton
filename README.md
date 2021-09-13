@@ -15,9 +15,8 @@ Se incluye un docker-compose para poder probar directamente la aplicación.
 - [DDD](docs/1_DDD.md)
 - [Instalación](docs/2_INSTALACION.md)
 - [Makefile](docs/3_MAKEFILE.md)
-- 
-
 
 ## Lista TODO
 - implementar CQRS
 - control propio de errores (mostrar un json con una respuesta de la exception lanzada)
+- kernel asincrono (react-php)
