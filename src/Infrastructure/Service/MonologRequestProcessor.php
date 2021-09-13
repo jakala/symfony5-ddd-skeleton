@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Infrastructure\Service;
@@ -23,5 +24,4 @@ final class MonologRequestProcessor
 
         return $record;
     }
-
 }
