@@ -8,7 +8,7 @@ if [ $? -ne 0 ]; then
 fi;
 echo "ok";
 echo -n "checking unit tests..."
-# make run-tests >> /dev/null 2>> /dev/null
+make run-tests >> /dev/null 2>> /dev/null
 if [ $? -ne 0 ]; then
    echo -e $ERROR " Please check with 'make run-tests'"
    exit 1
