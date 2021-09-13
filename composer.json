@@ -47,7 +47,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "post-autoload-dump": "git config core.hooksPath hooks"
     },
     "conflict": {
         "symfony/symfony": "*"

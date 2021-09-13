@@ -1,0 +1,24 @@
+#!/bin/bash
+ERROR="\u001b[31mERROR!\u001b[0m"
+echo -n "checking PSR-12 style..."
+make check-style >> /dev/null 2>> /dev/null
+if [ $? -ne 0 ]; then
+   echo -e $ERROR " Please check with 'make check-style'"
+   exit 1
+fi;
+echo "ok";
+echo -n "checking unit tests..."
+make run-tests >> /dev/null 2>> /dev/null
+if [ $? -ne 0 ]; then
+   echo -e $ERROR " Please check with 'make run-tests'"
+   exit 1
+fi;
+echo "ok"
+echo -n "checking inspect-phpstan..."
+#make inspect-phpstan >> /dev/null 2>> /dev/null
+if [ $? -ne 0 ]; then
+   echo -e $ERROR " Please check with 'make inspect-phpstan'"
+   exit 1
+fi;
+echo "ok"
+exit 0
