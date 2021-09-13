@@ -10,3 +10,4 @@ disponibles son:
 - `make run-tests`: nos ejecuta los tests de la carpeta con phpunit. Genera informe de cobertura en `var/coverage`
 - `make check-style`: revisa el formato de los archivos php para ver si cumplen PSR12 (por defecto)
 - `make fix-style`: corrige el formato de los archivos php a PSR12.
+- `make metrics`: genera un informe de metricas, para consultar el avance de la complejidad ciclomatica del proyecto.
