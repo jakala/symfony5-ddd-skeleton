@@ -18,7 +18,8 @@ final class MonologRequestProcessor
             $this->count = 0;
         }
         $this->count++;
-        $record['extra']['token'] = $this->token . '-' . $this->count ?? "token vacio";
+        $record['extra']['token'] = $this->token;
+        $record['extra']['index'] = $this->count;
         $duration = microtime(true) - $this->start;
         $record['extra']['duration'] = $duration;
 
