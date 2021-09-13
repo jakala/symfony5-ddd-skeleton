@@ -11,9 +11,11 @@ Se incluye un docker-compose para poder probar directamente la aplicación.
 - composer
 
 ## Documentación
+- [Changelog](docs/0_CHANGELOG.md)
 - [DDD](docs/1_DDD.md)
 - [Instalación](docs/2_INSTALACION.md)
 - [Makefile](docs/3_MAKEFILE.md)
+- 
 
 
 ## Lista TODO
