@@ -11,7 +11,8 @@ linea de logs. Un ejemplo:
   * El tercer paso indica el tiempo (en microsegundos) de ejecución DESDE el inicio de la sesión.
 
 ### Nuevos comandos Make
-Agregados tres comandos Make nuevos para revision de test y de formato psr12 de los archivos php.
+Agregados tres comandos Make nuevos para revision de test y de formato psr12 de los archivos php. En el caso de test ademas,
+generamos un informe de cobertura en html, dentro de la carpeta `var/coverage`
 
 ### Hooks pre-commit y pre-push
 Ahora, al hacer un commit se corrige el formato de los archivos php del commit, para que cumplan psr12.

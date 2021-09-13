@@ -6,8 +6,8 @@ namespace App\Shared\Infrastructure;
 
 final class MonologRequestProcessor
 {
-    private $token;
-    private $count;
+    private ?string $token = null ;
+    private ?int $count = null ;
     private float $start;
 
     public function __invoke(array $record): array

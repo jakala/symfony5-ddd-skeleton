@@ -21,7 +21,7 @@ vendors install_composer:
 # ejecutar test de phpunit
 .PHONY: run-tests
 run-tests:
-	@docker exec api vendor/bin/phpunit
+	@docker exec api vendor/bin/phpunit --coverage-html var/coverage
 
 # analizar formato php PSR12
 .PHONY: check-style

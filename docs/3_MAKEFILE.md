@@ -7,6 +7,6 @@ disponibles son:
 
 - `make compose`: nos genera el contenedor de la app, con la extension xdebug instalada y activada.
 - `make vendors`: descarga las carpetas de vendors llamando al composer local.
-- `make run-tests`: nos ejecuta los tests de la carpeta con phpunit.
+- `make run-tests`: nos ejecuta los tests de la carpeta con phpunit. Genera informe de cobertura en `var/coverage`
 - `make check-style`: revisa el formato de los archivos php para ver si cumplen PSR12 (por defecto)
 - `make fix-style`: corrige el formato de los archivos php a PSR12.
