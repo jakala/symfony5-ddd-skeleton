@@ -32,3 +32,7 @@ check-style:
 .PHONY: fix-style
 fix-style:
 	@docker exec api vendor/bin/phpcbf --standard=PSR12 src tests
+
+# crear informe de metricas php
+.PHONY: metrics
+	@docker exec api vendor/bin/phpmetrics src --report-html=var/metrics

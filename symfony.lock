@@ -29,6 +29,9 @@
     "phpdocumentor/type-resolver": {
         "version": "1.4.0"
     },
+    "phpmetrics/phpmetrics": {
+        "version": "v2.7.4"
+    },
     "phpspec/prophecy": {
         "version": "1.14.0"
     },
