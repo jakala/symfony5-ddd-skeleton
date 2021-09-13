@@ -35,6 +35,6 @@ services:
         arguments:
             - "[%%datetime%%] [%%extra.token%%] [%%extra.duration%%] %%channel%%.%%level_name%%: %%message%% %%context%% %%extra%%\n"
 
-    App\Infrastructure\Service\MonologRequestProcessor:
+    App\Shared\Infrastructure\MonologRequestProcessor:
         tags:
             - { name: monolog.processor }
