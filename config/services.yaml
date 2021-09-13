@@ -29,3 +29,12 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    monolog.formatter.session_request:
+        class: Monolog\Formatter\LineFormatter
+        arguments:
+            - "[%%datetime%%] [%%extra.token%%] [%%extra.duration%%] %%channel%%.%%level_name%%: %%message%% %%context%% %%extra%%\n"
+
+    App\Infrastructure\Service\MonologRequestProcessor:
+        tags:
+            - { name: monolog.processor }
