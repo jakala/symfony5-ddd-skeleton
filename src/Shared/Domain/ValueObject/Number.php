@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 use App\Shared\Domain\Exception\IntegerError;
@@ -16,12 +17,12 @@ class Number implements ValueObject
 
     public function value(): int
     {
-       return $this->value;
+        return $this->value;
     }
 
     public function check(mixed $value): void
     {
-        if(is_null($value)) {
+        if (is_null($value)) {
             throw new IntegerError($value);
         }
     }

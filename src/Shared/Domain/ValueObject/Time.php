@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 use App\Shared\Domain\Exception\TimeError;
@@ -9,7 +10,8 @@ class Time implements ValueObject
     public const FORMAT = 'Y-m-d';
 
     public function __construct(private Datetime $time)
-    {}
+    {
+    }
 
     public function value(): mixed
     {
@@ -18,7 +20,7 @@ class Time implements ValueObject
 
     public function check(mixed $value): void
     {
-        if(is_null($value)) {
+        if (is_null($value)) {
             throw new TimeError($value);
         }
     }
