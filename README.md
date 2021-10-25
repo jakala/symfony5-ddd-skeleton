@@ -18,5 +18,4 @@ Se incluye un docker-compose para poder probar directamente la aplicación.
 
 ## Lista TODO
 - implementar CQRS
-- control propio de errores (mostrar un json con una respuesta de la exception lanzada)
 - kernel asincrono (react-php)

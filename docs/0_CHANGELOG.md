@@ -1,7 +1,23 @@
 # CHANGELOG
+
+## 2021-10-25
+### Definida la Estructura de respuesta
+Se añade un servicio nuevo que recoje el response de nuestros controllers, y lo modifica dejando una estructura como 
+la siguiente:
+```
+{
+  "status": true,
+  "data": {}|[]
+}
+```
+siendo:
+  * status un valor que nos indica que la respuesta ha sido correcta,
+  * data es un array o un objeto que contiene la respuesta.
+
+De esta manera nuestras apis siempre tienen un formato igual para los casos correctos.
 ## 2021-09-13
 ### Actualización de Logs
-Añadida linea de logs con un token unico generado a traves de la sesion. De esta manera, se puede identificar toda la
+Añadida línea de logs con un token único generado a traves de la sesion. De esta manera, se puede identificar toda la
 linea de logs. Un ejemplo:
 ```
 [2021-09-13T20:59:58.135132+00:00] [613fbbce20fe2] [1] [2.8610229492188E-6] request.ERROR:
