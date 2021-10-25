@@ -39,6 +39,6 @@ services:
         tags:
             - { name: monolog.processor }
 
-    App\Shared\Infrastructure\Symfony\ResponseListener:
+    App\Shared\Infrastructure\ResponseListener:
         tags:
             - { name: kernel.event_listener, event: kernel.response, method: onResponse }
