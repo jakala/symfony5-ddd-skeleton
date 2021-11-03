@@ -25,4 +25,14 @@ final class MonologRequestProcessor
 
         return $record;
     }
+
+    public function token(): ?string
+    {
+        return $this->token;
+    }
+
+    public function count(): ?int
+    {
+        return $this->count;
+    }
 }
